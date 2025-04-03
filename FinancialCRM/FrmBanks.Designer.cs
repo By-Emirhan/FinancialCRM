@@ -40,31 +40,62 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblZiraatBankBalance = new System.Windows.Forms.Label();
+            this.lblAkbankBalance = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lblVakifbankBalance = new System.Windows.Forms.Label();
+            this.lblYapiKrediBalance = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblisBankasiBalance = new System.Windows.Forms.Label();
+            this.lblGarantiBBVABalance = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lblBankProcess5 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lblBankProcess4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lblBankProcess3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblBankProcess2 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblBankProcess1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.lblDescription1 = new System.Windows.Forms.Label();
+            this.lblDate1 = new System.Windows.Forms.Label();
+            this.lblProcessType1 = new System.Windows.Forms.Label();
+            this.lblAmount1 = new System.Windows.Forms.Label();
+            this.lblAmount2 = new System.Windows.Forms.Label();
+            this.lblProcessType2 = new System.Windows.Forms.Label();
+            this.lblDate2 = new System.Windows.Forms.Label();
+            this.lblDescription2 = new System.Windows.Forms.Label();
+            this.lblAmount3 = new System.Windows.Forms.Label();
+            this.lblProcessType3 = new System.Windows.Forms.Label();
+            this.lblDate3 = new System.Windows.Forms.Label();
+            this.lblDescription3 = new System.Windows.Forms.Label();
+            this.lblAmount4 = new System.Windows.Forms.Label();
+            this.lblProcessType4 = new System.Windows.Forms.Label();
+            this.lblDate4 = new System.Windows.Forms.Label();
+            this.lblDescription4 = new System.Windows.Forms.Label();
+            this.lblAmount5 = new System.Windows.Forms.Label();
+            this.lblProcessType5 = new System.Windows.Forms.Label();
+            this.lblDate5 = new System.Windows.Forms.Label();
+            this.lblDescription5 = new System.Windows.Forms.Label();
+            this.lblAmount6 = new System.Windows.Forms.Label();
+            this.lblProcessType6 = new System.Windows.Forms.Label();
+            this.lblDate6 = new System.Windows.Forms.Label();
+            this.lblDescription6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,7 +123,7 @@
             this.button8.Location = new System.Drawing.Point(11, 336);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(161, 35);
+            this.button8.Size = new System.Drawing.Size(161, 32);
             this.button8.TabIndex = 7;
             this.button8.Text = "Çıkış Yap";
             this.button8.UseVisualStyleBackColor = false;
@@ -213,7 +244,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(12)))), ((int)(((byte)(6)))));
-            this.panel3.Controls.Add(this.lblZiraatBankBalance);
+            this.panel3.Controls.Add(this.lblAkbankBalance);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(196, 48);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
@@ -221,34 +252,34 @@
             this.panel3.Size = new System.Drawing.Size(196, 113);
             this.panel3.TabIndex = 2;
             // 
-            // lblZiraatBankBalance
+            // lblAkbankBalance
             // 
-            this.lblZiraatBankBalance.AutoSize = true;
-            this.lblZiraatBankBalance.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblZiraatBankBalance.ForeColor = System.Drawing.Color.White;
-            this.lblZiraatBankBalance.Location = new System.Drawing.Point(6, 43);
-            this.lblZiraatBankBalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblZiraatBankBalance.Name = "lblZiraatBankBalance";
-            this.lblZiraatBankBalance.Size = new System.Drawing.Size(115, 46);
-            this.lblZiraatBankBalance.TabIndex = 5;
-            this.lblZiraatBankBalance.Text = "0.00 ₺";
+            this.lblAkbankBalance.AutoSize = true;
+            this.lblAkbankBalance.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAkbankBalance.ForeColor = System.Drawing.Color.White;
+            this.lblAkbankBalance.Location = new System.Drawing.Point(6, 43);
+            this.lblAkbankBalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAkbankBalance.Name = "lblAkbankBalance";
+            this.lblAkbankBalance.Size = new System.Drawing.Size(115, 46);
+            this.lblAkbankBalance.TabIndex = 5;
+            this.lblAkbankBalance.Text = "0.00 ₺";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(11, 8);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 19);
+            this.label2.Size = new System.Drawing.Size(69, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Akbank";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(20)))), ((int)(((byte)(73)))));
-            this.panel4.Controls.Add(this.lblVakifbankBalance);
+            this.panel4.Controls.Add(this.lblYapiKrediBalance);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(401, 48);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
@@ -256,34 +287,34 @@
             this.panel4.Size = new System.Drawing.Size(196, 113);
             this.panel4.TabIndex = 3;
             // 
-            // lblVakifbankBalance
+            // lblYapiKrediBalance
             // 
-            this.lblVakifbankBalance.AutoSize = true;
-            this.lblVakifbankBalance.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblVakifbankBalance.ForeColor = System.Drawing.Color.White;
-            this.lblVakifbankBalance.Location = new System.Drawing.Point(6, 43);
-            this.lblVakifbankBalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblVakifbankBalance.Name = "lblVakifbankBalance";
-            this.lblVakifbankBalance.Size = new System.Drawing.Size(115, 46);
-            this.lblVakifbankBalance.TabIndex = 5;
-            this.lblVakifbankBalance.Text = "0.00 ₺";
+            this.lblYapiKrediBalance.AutoSize = true;
+            this.lblYapiKrediBalance.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblYapiKrediBalance.ForeColor = System.Drawing.Color.White;
+            this.lblYapiKrediBalance.Location = new System.Drawing.Point(6, 43);
+            this.lblYapiKrediBalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblYapiKrediBalance.Name = "lblYapiKrediBalance";
+            this.lblYapiKrediBalance.Size = new System.Drawing.Size(115, 46);
+            this.lblYapiKrediBalance.TabIndex = 5;
+            this.lblYapiKrediBalance.Text = "0.00 ₺";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(11, 8);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 19);
+            this.label5.Size = new System.Drawing.Size(89, 23);
             this.label5.TabIndex = 4;
             this.label5.Text = "Yapı Kredi";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
-            this.panel5.Controls.Add(this.lblisBankasiBalance);
+            this.panel5.Controls.Add(this.lblGarantiBBVABalance);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Location = new System.Drawing.Point(604, 48);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
@@ -291,174 +322,493 @@
             this.panel5.Size = new System.Drawing.Size(196, 113);
             this.panel5.TabIndex = 4;
             // 
-            // lblisBankasiBalance
+            // lblGarantiBBVABalance
             // 
-            this.lblisBankasiBalance.AutoSize = true;
-            this.lblisBankasiBalance.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblisBankasiBalance.ForeColor = System.Drawing.Color.White;
-            this.lblisBankasiBalance.Location = new System.Drawing.Point(6, 43);
-            this.lblisBankasiBalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblisBankasiBalance.Name = "lblisBankasiBalance";
-            this.lblisBankasiBalance.Size = new System.Drawing.Size(115, 46);
-            this.lblisBankasiBalance.TabIndex = 5;
-            this.lblisBankasiBalance.Text = "0.00 ₺";
+            this.lblGarantiBBVABalance.AutoSize = true;
+            this.lblGarantiBBVABalance.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGarantiBBVABalance.ForeColor = System.Drawing.Color.White;
+            this.lblGarantiBBVABalance.Location = new System.Drawing.Point(6, 43);
+            this.lblGarantiBBVABalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGarantiBBVABalance.Name = "lblGarantiBBVABalance";
+            this.lblGarantiBBVABalance.Size = new System.Drawing.Size(115, 46);
+            this.lblGarantiBBVABalance.TabIndex = 5;
+            this.lblGarantiBBVABalance.Text = "0.00 ₺";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(11, 8);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 19);
+            this.label7.Size = new System.Drawing.Size(116, 23);
             this.label7.TabIndex = 4;
             this.label7.Text = "Garanti BBVA";
             // 
-            // groupBox1
+            // panel6
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(161)))), ((int)(((byte)(143)))));
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.lblBankProcess5);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.lblBankProcess4);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.lblBankProcess3);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.lblBankProcess2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.lblBankProcess1);
-            this.groupBox1.Location = new System.Drawing.Point(196, 172);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(604, 246);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Son 5 Banka Hareketi";
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(161)))), ((int)(((byte)(143)))));
+            this.panel6.Controls.Add(this.lblAmount6);
+            this.panel6.Controls.Add(this.lblProcessType6);
+            this.panel6.Controls.Add(this.lblDate6);
+            this.panel6.Controls.Add(this.lblDescription6);
+            this.panel6.Controls.Add(this.lblAmount5);
+            this.panel6.Controls.Add(this.lblProcessType5);
+            this.panel6.Controls.Add(this.lblDate5);
+            this.panel6.Controls.Add(this.lblDescription5);
+            this.panel6.Controls.Add(this.lblAmount4);
+            this.panel6.Controls.Add(this.lblProcessType4);
+            this.panel6.Controls.Add(this.lblDate4);
+            this.panel6.Controls.Add(this.lblDescription4);
+            this.panel6.Controls.Add(this.lblAmount3);
+            this.panel6.Controls.Add(this.lblProcessType3);
+            this.panel6.Controls.Add(this.lblDate3);
+            this.panel6.Controls.Add(this.lblDescription3);
+            this.panel6.Controls.Add(this.lblAmount2);
+            this.panel6.Controls.Add(this.lblProcessType2);
+            this.panel6.Controls.Add(this.lblDate2);
+            this.panel6.Controls.Add(this.lblDescription2);
+            this.panel6.Controls.Add(this.lblAmount1);
+            this.panel6.Controls.Add(this.lblProcessType1);
+            this.panel6.Controls.Add(this.lblDate1);
+            this.panel6.Controls.Add(this.lblDescription1);
+            this.panel6.Controls.Add(this.panel17);
+            this.panel6.Controls.Add(this.panel16);
+            this.panel6.Controls.Add(this.panel15);
+            this.panel6.Controls.Add(this.panel14);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.label6);
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Controls.Add(this.panel12);
+            this.panel6.Controls.Add(this.panel13);
+            this.panel6.Controls.Add(this.panel11);
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Location = new System.Drawing.Point(196, 166);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(604, 256);
+            this.panel6.TabIndex = 5;
             // 
-            // label13
+            // panel10
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(4, 194);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(658, 18);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "---------------------------------------------------------------------------------" +
-    "-------------------------------------------------";
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel10.Controls.Add(this.label3);
+            this.panel10.Location = new System.Drawing.Point(196, 166);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(604, 28);
+            this.panel10.TabIndex = 3;
             // 
-            // lblBankProcess5
+            // label3
             // 
-            this.lblBankProcess5.AutoSize = true;
-            this.lblBankProcess5.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBankProcess5.Location = new System.Drawing.Point(4, 176);
-            this.lblBankProcess5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBankProcess5.Name = "lblBankProcess5";
-            this.lblBankProcess5.Size = new System.Drawing.Size(54, 18);
-            this.lblBankProcess5.TabIndex = 8;
-            this.lblBankProcess5.Text = "Metin 5";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(2, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(119, 26);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Son İşlemler";
             // 
-            // label11
+            // panel7
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(4, 157);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(658, 18);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "---------------------------------------------------------------------------------" +
-    "-------------------------------------------------";
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel7.Location = new System.Drawing.Point(0, 51);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(604, 12);
+            this.panel7.TabIndex = 0;
             // 
-            // lblBankProcess4
+            // panel8
             // 
-            this.lblBankProcess4.AutoSize = true;
-            this.lblBankProcess4.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBankProcess4.Location = new System.Drawing.Point(4, 138);
-            this.lblBankProcess4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBankProcess4.Name = "lblBankProcess4";
-            this.lblBankProcess4.Size = new System.Drawing.Size(54, 18);
-            this.lblBankProcess4.TabIndex = 6;
-            this.lblBankProcess4.Text = "Metin 4";
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel8.Location = new System.Drawing.Point(0, 118);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(604, 12);
+            this.panel8.TabIndex = 1;
             // 
-            // label9
+            // panel9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(4, 120);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(658, 18);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "---------------------------------------------------------------------------------" +
-    "-------------------------------------------------";
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel9.Location = new System.Drawing.Point(196, 250);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(604, 12);
+            this.panel9.TabIndex = 2;
             // 
-            // lblBankProcess3
+            // panel11
             // 
-            this.lblBankProcess3.AutoSize = true;
-            this.lblBankProcess3.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBankProcess3.Location = new System.Drawing.Point(4, 101);
-            this.lblBankProcess3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBankProcess3.Name = "lblBankProcess3";
-            this.lblBankProcess3.Size = new System.Drawing.Size(54, 18);
-            this.lblBankProcess3.TabIndex = 4;
-            this.lblBankProcess3.Text = "Metin 3";
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel11.Location = new System.Drawing.Point(0, 153);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(604, 12);
+            this.panel11.TabIndex = 3;
             // 
-            // label6
+            // panel12
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(4, 82);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(658, 18);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "---------------------------------------------------------------------------------" +
-    "-------------------------------------------------";
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel12.Location = new System.Drawing.Point(0, 188);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(604, 12);
+            this.panel12.TabIndex = 4;
             // 
-            // lblBankProcess2
+            // panel13
             // 
-            this.lblBankProcess2.AutoSize = true;
-            this.lblBankProcess2.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBankProcess2.Location = new System.Drawing.Point(4, 63);
-            this.lblBankProcess2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBankProcess2.Name = "lblBankProcess2";
-            this.lblBankProcess2.Size = new System.Drawing.Size(54, 18);
-            this.lblBankProcess2.TabIndex = 2;
-            this.lblBankProcess2.Text = "Metin 2";
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel13.Location = new System.Drawing.Point(0, 222);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(604, 12);
+            this.panel13.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(4, 44);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(87, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(658, 18);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "---------------------------------------------------------------------------------" +
-    "-------------------------------------------------";
+            this.label4.Size = new System.Drawing.Size(91, 26);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Açıklama";
             // 
-            // lblBankProcess1
+            // label6
             // 
-            this.lblBankProcess1.AutoSize = true;
-            this.lblBankProcess1.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBankProcess1.Location = new System.Drawing.Point(4, 25);
-            this.lblBankProcess1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBankProcess1.Name = "lblBankProcess1";
-            this.lblBankProcess1.Size = new System.Drawing.Size(54, 18);
-            this.lblBankProcess1.TabIndex = 0;
-            this.lblBankProcess1.Text = "Metin 1";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(295, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 26);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Tarih";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(400, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(102, 26);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "İşlem Türü";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(525, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 26);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "  Tutar";
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel14.Location = new System.Drawing.Point(503, 24);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(16, 266);
+            this.panel14.TabIndex = 4;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel15.Location = new System.Drawing.Point(378, 24);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(16, 266);
+            this.panel15.TabIndex = 9;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel16.Location = new System.Drawing.Point(259, -5);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(0, 0);
+            this.panel16.TabIndex = 10;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel17.Location = new System.Drawing.Point(251, 24);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(16, 266);
+            this.panel17.TabIndex = 11;
+            // 
+            // lblDescription1
+            // 
+            this.lblDescription1.AutoSize = true;
+            this.lblDescription1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDescription1.ForeColor = System.Drawing.Color.White;
+            this.lblDescription1.Location = new System.Drawing.Point(4, 63);
+            this.lblDescription1.Name = "lblDescription1";
+            this.lblDescription1.Size = new System.Drawing.Size(12, 16);
+            this.lblDescription1.TabIndex = 12;
+            this.lblDescription1.Text = "-";
+            // 
+            // lblDate1
+            // 
+            this.lblDate1.AutoSize = true;
+            this.lblDate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDate1.ForeColor = System.Drawing.Color.White;
+            this.lblDate1.Location = new System.Drawing.Point(273, 63);
+            this.lblDate1.Name = "lblDate1";
+            this.lblDate1.Size = new System.Drawing.Size(12, 16);
+            this.lblDate1.TabIndex = 13;
+            this.lblDate1.Text = "-";
+            // 
+            // lblProcessType1
+            // 
+            this.lblProcessType1.AutoSize = true;
+            this.lblProcessType1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProcessType1.ForeColor = System.Drawing.Color.White;
+            this.lblProcessType1.Location = new System.Drawing.Point(400, 63);
+            this.lblProcessType1.Name = "lblProcessType1";
+            this.lblProcessType1.Size = new System.Drawing.Size(12, 16);
+            this.lblProcessType1.TabIndex = 14;
+            this.lblProcessType1.Text = "-";
+            // 
+            // lblAmount1
+            // 
+            this.lblAmount1.AutoSize = true;
+            this.lblAmount1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAmount1.ForeColor = System.Drawing.Color.White;
+            this.lblAmount1.Location = new System.Drawing.Point(525, 63);
+            this.lblAmount1.Name = "lblAmount1";
+            this.lblAmount1.Size = new System.Drawing.Size(12, 16);
+            this.lblAmount1.TabIndex = 15;
+            this.lblAmount1.Text = "-";
+            // 
+            // lblAmount2
+            // 
+            this.lblAmount2.AutoSize = true;
+            this.lblAmount2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAmount2.ForeColor = System.Drawing.Color.White;
+            this.lblAmount2.Location = new System.Drawing.Point(525, 96);
+            this.lblAmount2.Name = "lblAmount2";
+            this.lblAmount2.Size = new System.Drawing.Size(12, 16);
+            this.lblAmount2.TabIndex = 19;
+            this.lblAmount2.Text = "-";
+            // 
+            // lblProcessType2
+            // 
+            this.lblProcessType2.AutoSize = true;
+            this.lblProcessType2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProcessType2.ForeColor = System.Drawing.Color.White;
+            this.lblProcessType2.Location = new System.Drawing.Point(400, 96);
+            this.lblProcessType2.Name = "lblProcessType2";
+            this.lblProcessType2.Size = new System.Drawing.Size(12, 16);
+            this.lblProcessType2.TabIndex = 18;
+            this.lblProcessType2.Text = "-";
+            // 
+            // lblDate2
+            // 
+            this.lblDate2.AutoSize = true;
+            this.lblDate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDate2.ForeColor = System.Drawing.Color.White;
+            this.lblDate2.Location = new System.Drawing.Point(273, 96);
+            this.lblDate2.Name = "lblDate2";
+            this.lblDate2.Size = new System.Drawing.Size(12, 16);
+            this.lblDate2.TabIndex = 17;
+            this.lblDate2.Text = "-";
+            // 
+            // lblDescription2
+            // 
+            this.lblDescription2.AutoSize = true;
+            this.lblDescription2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDescription2.ForeColor = System.Drawing.Color.White;
+            this.lblDescription2.Location = new System.Drawing.Point(4, 96);
+            this.lblDescription2.Name = "lblDescription2";
+            this.lblDescription2.Size = new System.Drawing.Size(12, 16);
+            this.lblDescription2.TabIndex = 16;
+            this.lblDescription2.Text = "-";
+            // 
+            // lblAmount3
+            // 
+            this.lblAmount3.AutoSize = true;
+            this.lblAmount3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAmount3.ForeColor = System.Drawing.Color.White;
+            this.lblAmount3.Location = new System.Drawing.Point(525, 134);
+            this.lblAmount3.Name = "lblAmount3";
+            this.lblAmount3.Size = new System.Drawing.Size(12, 16);
+            this.lblAmount3.TabIndex = 23;
+            this.lblAmount3.Text = "-";
+            // 
+            // lblProcessType3
+            // 
+            this.lblProcessType3.AutoSize = true;
+            this.lblProcessType3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProcessType3.ForeColor = System.Drawing.Color.White;
+            this.lblProcessType3.Location = new System.Drawing.Point(400, 134);
+            this.lblProcessType3.Name = "lblProcessType3";
+            this.lblProcessType3.Size = new System.Drawing.Size(12, 16);
+            this.lblProcessType3.TabIndex = 22;
+            this.lblProcessType3.Text = "-";
+            // 
+            // lblDate3
+            // 
+            this.lblDate3.AutoSize = true;
+            this.lblDate3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDate3.ForeColor = System.Drawing.Color.White;
+            this.lblDate3.Location = new System.Drawing.Point(273, 134);
+            this.lblDate3.Name = "lblDate3";
+            this.lblDate3.Size = new System.Drawing.Size(12, 16);
+            this.lblDate3.TabIndex = 21;
+            this.lblDate3.Text = "-";
+            // 
+            // lblDescription3
+            // 
+            this.lblDescription3.AutoSize = true;
+            this.lblDescription3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDescription3.ForeColor = System.Drawing.Color.White;
+            this.lblDescription3.Location = new System.Drawing.Point(4, 134);
+            this.lblDescription3.Name = "lblDescription3";
+            this.lblDescription3.Size = new System.Drawing.Size(14, 18);
+            this.lblDescription3.TabIndex = 20;
+            this.lblDescription3.Text = "-";
+            // 
+            // lblAmount4
+            // 
+            this.lblAmount4.AutoSize = true;
+            this.lblAmount4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAmount4.ForeColor = System.Drawing.Color.White;
+            this.lblAmount4.Location = new System.Drawing.Point(525, 169);
+            this.lblAmount4.Name = "lblAmount4";
+            this.lblAmount4.Size = new System.Drawing.Size(12, 16);
+            this.lblAmount4.TabIndex = 27;
+            this.lblAmount4.Text = "-";
+            // 
+            // lblProcessType4
+            // 
+            this.lblProcessType4.AutoSize = true;
+            this.lblProcessType4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProcessType4.ForeColor = System.Drawing.Color.White;
+            this.lblProcessType4.Location = new System.Drawing.Point(400, 169);
+            this.lblProcessType4.Name = "lblProcessType4";
+            this.lblProcessType4.Size = new System.Drawing.Size(12, 16);
+            this.lblProcessType4.TabIndex = 26;
+            this.lblProcessType4.Text = "-";
+            // 
+            // lblDate4
+            // 
+            this.lblDate4.AutoSize = true;
+            this.lblDate4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDate4.ForeColor = System.Drawing.Color.White;
+            this.lblDate4.Location = new System.Drawing.Point(273, 169);
+            this.lblDate4.Name = "lblDate4";
+            this.lblDate4.Size = new System.Drawing.Size(12, 16);
+            this.lblDate4.TabIndex = 25;
+            this.lblDate4.Text = "-";
+            // 
+            // lblDescription4
+            // 
+            this.lblDescription4.AutoSize = true;
+            this.lblDescription4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDescription4.ForeColor = System.Drawing.Color.White;
+            this.lblDescription4.Location = new System.Drawing.Point(4, 169);
+            this.lblDescription4.Name = "lblDescription4";
+            this.lblDescription4.Size = new System.Drawing.Size(12, 16);
+            this.lblDescription4.TabIndex = 24;
+            this.lblDescription4.Text = "-";
+            // 
+            // lblAmount5
+            // 
+            this.lblAmount5.AutoSize = true;
+            this.lblAmount5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAmount5.ForeColor = System.Drawing.Color.White;
+            this.lblAmount5.Location = new System.Drawing.Point(525, 203);
+            this.lblAmount5.Name = "lblAmount5";
+            this.lblAmount5.Size = new System.Drawing.Size(12, 16);
+            this.lblAmount5.TabIndex = 31;
+            this.lblAmount5.Text = "-";
+            // 
+            // lblProcessType5
+            // 
+            this.lblProcessType5.AutoSize = true;
+            this.lblProcessType5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProcessType5.ForeColor = System.Drawing.Color.White;
+            this.lblProcessType5.Location = new System.Drawing.Point(400, 203);
+            this.lblProcessType5.Name = "lblProcessType5";
+            this.lblProcessType5.Size = new System.Drawing.Size(12, 16);
+            this.lblProcessType5.TabIndex = 30;
+            this.lblProcessType5.Text = "-";
+            // 
+            // lblDate5
+            // 
+            this.lblDate5.AutoSize = true;
+            this.lblDate5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDate5.ForeColor = System.Drawing.Color.White;
+            this.lblDate5.Location = new System.Drawing.Point(273, 203);
+            this.lblDate5.Name = "lblDate5";
+            this.lblDate5.Size = new System.Drawing.Size(12, 16);
+            this.lblDate5.TabIndex = 29;
+            this.lblDate5.Text = "-";
+            // 
+            // lblDescription5
+            // 
+            this.lblDescription5.AutoSize = true;
+            this.lblDescription5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDescription5.ForeColor = System.Drawing.Color.White;
+            this.lblDescription5.Location = new System.Drawing.Point(4, 203);
+            this.lblDescription5.Name = "lblDescription5";
+            this.lblDescription5.Size = new System.Drawing.Size(12, 16);
+            this.lblDescription5.TabIndex = 28;
+            this.lblDescription5.Text = "-";
+            // 
+            // lblAmount6
+            // 
+            this.lblAmount6.AutoSize = true;
+            this.lblAmount6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAmount6.ForeColor = System.Drawing.Color.White;
+            this.lblAmount6.Location = new System.Drawing.Point(525, 234);
+            this.lblAmount6.Name = "lblAmount6";
+            this.lblAmount6.Size = new System.Drawing.Size(12, 16);
+            this.lblAmount6.TabIndex = 35;
+            this.lblAmount6.Text = "-";
+            // 
+            // lblProcessType6
+            // 
+            this.lblProcessType6.AutoSize = true;
+            this.lblProcessType6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProcessType6.ForeColor = System.Drawing.Color.White;
+            this.lblProcessType6.Location = new System.Drawing.Point(400, 234);
+            this.lblProcessType6.Name = "lblProcessType6";
+            this.lblProcessType6.Size = new System.Drawing.Size(12, 16);
+            this.lblProcessType6.TabIndex = 34;
+            this.lblProcessType6.Text = "-";
+            // 
+            // lblDate6
+            // 
+            this.lblDate6.AutoSize = true;
+            this.lblDate6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDate6.ForeColor = System.Drawing.Color.White;
+            this.lblDate6.Location = new System.Drawing.Point(273, 234);
+            this.lblDate6.Name = "lblDate6";
+            this.lblDate6.Size = new System.Drawing.Size(12, 16);
+            this.lblDate6.TabIndex = 33;
+            this.lblDate6.Text = "-";
+            // 
+            // lblDescription6
+            // 
+            this.lblDescription6.AutoSize = true;
+            this.lblDescription6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDescription6.ForeColor = System.Drawing.Color.White;
+            this.lblDescription6.Location = new System.Drawing.Point(4, 234);
+            this.lblDescription6.Name = "lblDescription6";
+            this.lblDescription6.Size = new System.Drawing.Size(12, 16);
+            this.lblDescription6.TabIndex = 32;
+            this.lblDescription6.Text = "-";
             // 
             // FrmBanks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(238)))), ((int)(((byte)(211)))));
-            this.ClientSize = new System.Drawing.Size(805, 424);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(805, 425);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -478,8 +828,10 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -498,24 +850,54 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lblZiraatBankBalance;
+        private System.Windows.Forms.Label lblAkbankBalance;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblisBankasiBalance;
+        private System.Windows.Forms.Label lblGarantiBBVABalance;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblVakifbankBalance;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label lblBankProcess5;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lblBankProcess4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblBankProcess3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblBankProcess2;
+        private System.Windows.Forms.Label lblYapiKrediBalance;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblBankProcess1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label lblDescription1;
+        private System.Windows.Forms.Label lblAmount6;
+        private System.Windows.Forms.Label lblProcessType6;
+        private System.Windows.Forms.Label lblDate6;
+        private System.Windows.Forms.Label lblDescription6;
+        private System.Windows.Forms.Label lblAmount5;
+        private System.Windows.Forms.Label lblProcessType5;
+        private System.Windows.Forms.Label lblDate5;
+        private System.Windows.Forms.Label lblDescription5;
+        private System.Windows.Forms.Label lblAmount4;
+        private System.Windows.Forms.Label lblProcessType4;
+        private System.Windows.Forms.Label lblDate4;
+        private System.Windows.Forms.Label lblDescription4;
+        private System.Windows.Forms.Label lblAmount3;
+        private System.Windows.Forms.Label lblProcessType3;
+        private System.Windows.Forms.Label lblDate3;
+        private System.Windows.Forms.Label lblDescription3;
+        private System.Windows.Forms.Label lblAmount2;
+        private System.Windows.Forms.Label lblProcessType2;
+        private System.Windows.Forms.Label lblDate2;
+        private System.Windows.Forms.Label lblDescription2;
+        private System.Windows.Forms.Label lblAmount1;
+        private System.Windows.Forms.Label lblProcessType1;
+        private System.Windows.Forms.Label lblDate1;
     }
 }
