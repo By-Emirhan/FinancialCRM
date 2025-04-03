@@ -33,7 +33,7 @@ namespace FinancialCRM
         {
             FrmBanks frm = new FrmBanks();
             frm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnCreateBill_Click(object sender, EventArgs e)// Yeni Ödeme Oluşturma... //
@@ -82,6 +82,11 @@ namespace FinancialCRM
 
             var values1 = DB.Bills.ToList();
             dataGridView1.DataSource = values1;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

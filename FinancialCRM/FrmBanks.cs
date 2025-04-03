@@ -3,8 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -86,6 +88,11 @@ namespace FinancialCRM
             FrmBilling frm = new FrmBilling();
             frm.Show();
             this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
