@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -47,14 +53,24 @@
             this.lblBillAmount = new System.Windows.Forms.Label();
             this.lblBillTitle = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblGarantiBBVABalance = new System.Windows.Forms.Label();
+            this.lblLastBankProcessAmount = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -273,7 +289,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.panel5.Controls.Add(this.lblGarantiBBVABalance);
+            this.panel5.Controls.Add(this.lblLastBankProcessAmount);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Location = new System.Drawing.Point(604, 48);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
@@ -281,17 +297,17 @@
             this.panel5.Size = new System.Drawing.Size(196, 113);
             this.panel5.TabIndex = 4;
             // 
-            // lblGarantiBBVABalance
+            // lblLastBankProcessAmount
             // 
-            this.lblGarantiBBVABalance.AutoSize = true;
-            this.lblGarantiBBVABalance.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblGarantiBBVABalance.ForeColor = System.Drawing.Color.White;
-            this.lblGarantiBBVABalance.Location = new System.Drawing.Point(6, 43);
-            this.lblGarantiBBVABalance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblGarantiBBVABalance.Name = "lblGarantiBBVABalance";
-            this.lblGarantiBBVABalance.Size = new System.Drawing.Size(115, 46);
-            this.lblGarantiBBVABalance.TabIndex = 5;
-            this.lblGarantiBBVABalance.Text = "0.00 ₺";
+            this.lblLastBankProcessAmount.AutoSize = true;
+            this.lblLastBankProcessAmount.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLastBankProcessAmount.ForeColor = System.Drawing.Color.White;
+            this.lblLastBankProcessAmount.Location = new System.Drawing.Point(6, 43);
+            this.lblLastBankProcessAmount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLastBankProcessAmount.Name = "lblLastBankProcessAmount";
+            this.lblLastBankProcessAmount.Size = new System.Drawing.Size(115, 46);
+            this.lblLastBankProcessAmount.TabIndex = 5;
+            this.lblLastBankProcessAmount.Text = "0.00 ₺";
             // 
             // label7
             // 
@@ -301,15 +317,93 @@
             this.label7.Location = new System.Drawing.Point(11, 8);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 23);
+            this.label7.Size = new System.Drawing.Size(136, 23);
             this.label7.TabIndex = 4;
-            this.label7.Text = "Garanti BBVA";
+            this.label7.Text = "Son İşlem Tutarı";
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 1500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(161)))), ((int)(((byte)(143)))));
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(196, 227);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chart1.PaletteCustomColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Red};
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(289, 190);
+            this.chart1.TabIndex = 5;
+            this.chart1.Text = "chart1";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Location = new System.Drawing.Point(196, 166);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(289, 55);
+            this.panel6.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(3, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(264, 40);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Banka ve bankalardaki bakiye bilgisi \r\naşağıdaki grafikte verilmiştir.";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Location = new System.Drawing.Point(511, 166);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(289, 55);
+            this.panel7.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(3, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(240, 40);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Ödenmesi gereken fatura bilgileri\r\naşağıdaki grafikte verilmiştir.";
+            // 
+            // chart2
+            // 
+            this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(161)))), ((int)(((byte)(143)))));
+            chartArea4.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart2.Legends.Add(legend4);
+            this.chart2.Location = new System.Drawing.Point(511, 227);
+            this.chart2.Name = "chart2";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.Legend = "Legend1";
+            series4.Name = "Series2";
+            this.chart2.Series.Add(series4);
+            this.chart2.Size = new System.Drawing.Size(289, 190);
+            this.chart2.TabIndex = 7;
+            this.chart2.Text = "chart2";
             // 
             // FrmDashboard
             // 
@@ -318,6 +412,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(238)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(805, 425);
             this.ControlBox = false;
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.chart2);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -337,6 +435,12 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -360,10 +464,16 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblBillTitle;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblGarantiBBVABalance;
+        private System.Windows.Forms.Label lblLastBankProcessAmount;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblBillAmount;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
     }
 }
 
