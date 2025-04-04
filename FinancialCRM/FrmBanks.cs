@@ -82,17 +82,16 @@ namespace FinancialCRM
             lblProcessType6.Text = bankProcess6.ProcessType.ToString();
             lblAmount6.Text = bankProcess6.Amount.ToString() + " ₺";
         }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
-        private void btnBillForm_Click(object sender, EventArgs e)
+        private void btnBillFrom_Click(object sender, EventArgs e)
         {
             FrmBilling frm = new FrmBilling();
             frm.Show();
             this.Hide();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

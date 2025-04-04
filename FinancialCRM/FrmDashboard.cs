@@ -87,5 +87,31 @@ namespace FinancialCRM
                 lblBillAmount.Text = billTitle.BillAmount.ToString() + " ₺";
             }
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnBanksForm_Click(object sender, EventArgs e)
+        {
+            FrmBanks Banks = new FrmBanks();
+            Banks.Show();
+            this.Close();
+        }
+
+        private void btnBillsForm_Click(object sender, EventArgs e)
+        {
+            FrmBilling Bills = new FrmBilling();
+            Bills.Show();
+            this.Close();
+        }
+
+        private void btnSpendingForm_Click(object sender, EventArgs e)
+        {
+            FrmSpending spending = new FrmSpending();
+            spending.Show();
+            this.Close();
+        }
     }
 }

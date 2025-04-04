@@ -48,7 +48,7 @@ namespace FinancialCRM
             bills.BillPeriod = period;
             DB.Bills.Add(bills);
             DB.SaveChanges();
-            MessageBox.Show("Ödeme planınız başarıyla Eklendi...", "Ödeme / Fatura Formu");
+            MessageBox.Show("Ödeme planınız başarıyla Eklendi...", "Fatura Formu");
 
             var values = DB.Bills.ToList();
             dataGridView1.DataSource = values;
@@ -60,7 +60,7 @@ namespace FinancialCRM
             var removeValue = DB.Bills.Find(ID);
             DB.Bills.Remove(removeValue);
             DB.SaveChanges();
-            MessageBox.Show("Ödeme planınız başarıyla Silindi...", "Ödeme / Fatura Formu");
+            MessageBox.Show("Ödeme planınız başarıyla Silindi...", "Fatura Formu");
 
             var values = DB.Bills.ToList();
             dataGridView1.DataSource = values;
@@ -78,7 +78,7 @@ namespace FinancialCRM
             values.BillAmount = Amount;
             values.BillPeriod = period;
             DB.SaveChanges();
-            MessageBox.Show("Ödeme planınız başarıyla Güncellendi...", "Ödeme / Fatura Formu");
+            MessageBox.Show("Ödeme planınız başarıyla Güncellendi...", "Fatura Formu");
 
             var values1 = DB.Bills.ToList();
             dataGridView1.DataSource = values1;
