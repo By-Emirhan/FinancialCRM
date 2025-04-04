@@ -23,6 +23,8 @@ namespace FinancialCRM
         FinancialCRMDbEntities DB = new FinancialCRMDbEntities();
         private void FrmBanks_Load(object sender, EventArgs e)
         {
+            lblUserName.Text += Username.KullaniciAdi;
+
             //
             // Bankadaki Bakiye Bilgilerini Getirme...
             //
@@ -91,6 +93,13 @@ namespace FinancialCRM
         {
             FrmBilling frm = new FrmBilling();
             frm.Show();
+            this.Hide();
+        }
+
+        private void btnSettingsForm_Click(object sender, EventArgs e)
+        {
+            FrmSettings settings = new FrmSettings();
+            settings.Show();
             this.Hide();
         }
     }

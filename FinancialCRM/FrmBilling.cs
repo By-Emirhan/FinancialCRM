@@ -21,6 +21,8 @@ namespace FinancialCRM
         FinancialCRMDbEntities DB = new FinancialCRMDbEntities();
         private void FrmBilling_Load(object sender, EventArgs e)// Sayfa Yüklendiğinde Listeyi Otomatik Getirme... //
         {
+            lblUserName.Text += Username.KullaniciAdi;
+
             var values = DB.Bills.ToList();
             dataGridView1.DataSource = values;
         }

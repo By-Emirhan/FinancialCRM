@@ -40,7 +40,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.btnLastProcess = new System.Windows.Forms.Button();
             this.btnSpendingForm = new System.Windows.Forms.Button();
             this.btnBillsForm = new System.Windows.Forms.Button();
             this.btnBanksForm = new System.Windows.Forms.Button();
@@ -63,6 +62,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -80,7 +80,6 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.btnLastProcess);
             this.panel1.Controls.Add(this.btnSpendingForm);
             this.panel1.Controls.Add(this.btnBillsForm);
             this.panel1.Controls.Add(this.btnBanksForm);
@@ -96,7 +95,7 @@
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
             this.button8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(11, 336);
+            this.button8.Location = new System.Drawing.Point(11, 291);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(161, 32);
@@ -110,39 +109,27 @@
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
             this.button7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(11, 287);
+            this.button7.Location = new System.Drawing.Point(11, 242);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(161, 35);
             this.button7.TabIndex = 6;
             this.button7.Text = "Ayarlar";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
             this.button6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(11, 241);
+            this.button6.Location = new System.Drawing.Point(11, 196);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(161, 35);
             this.button6.TabIndex = 5;
             this.button6.Text = "Kategoriler";
             this.button6.UseVisualStyleBackColor = false;
-            // 
-            // btnLastProcess
-            // 
-            this.btnLastProcess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
-            this.btnLastProcess.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLastProcess.ForeColor = System.Drawing.Color.White;
-            this.btnLastProcess.Location = new System.Drawing.Point(11, 195);
-            this.btnLastProcess.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLastProcess.Name = "btnLastProcess";
-            this.btnLastProcess.Size = new System.Drawing.Size(161, 35);
-            this.btnLastProcess.TabIndex = 4;
-            this.btnLastProcess.Text = "Banka Hareketleri";
-            this.btnLastProcess.UseVisualStyleBackColor = false;
             // 
             // btnSpendingForm
             // 
@@ -202,6 +189,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel2.Controls.Add(this.lblUserName);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, -1);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -410,6 +398,18 @@
             this.chart2.TabIndex = 7;
             this.chart2.Text = "chart2";
             // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUserName.ForeColor = System.Drawing.Color.White;
+            this.lblUserName.Location = new System.Drawing.Point(534, 5);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(129, 26);
+            this.lblUserName.TabIndex = 4;
+            this.lblUserName.Text = "Kullanıcı Adı: ";
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,7 +457,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button btnLastProcess;
         private System.Windows.Forms.Button btnSpendingForm;
         private System.Windows.Forms.Button btnBillsForm;
         private System.Windows.Forms.Button btnBanksForm;
@@ -480,6 +479,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.Label lblUserName;
     }
 }
 

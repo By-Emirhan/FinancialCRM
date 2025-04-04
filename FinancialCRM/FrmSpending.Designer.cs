@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSpending));
             this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.btnUpdateSpending = new System.Windows.Forms.Button();
             this.btnRemoveSpending = new System.Windows.Forms.Button();
             this.btnCreateSpending = new System.Windows.Forms.Button();
@@ -57,6 +56,7 @@
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -69,26 +69,13 @@
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
             this.button7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(11, 287);
+            this.button7.Location = new System.Drawing.Point(11, 240);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(161, 35);
             this.button7.TabIndex = 6;
             this.button7.Text = "Ayarlar";
             this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
-            this.button5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(11, 195);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(161, 35);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Banka Hareketleri";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // btnUpdateSpending
             // 
@@ -233,7 +220,7 @@
             this.btnCategoriesForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
             this.btnCategoriesForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCategoriesForm.ForeColor = System.Drawing.Color.White;
-            this.btnCategoriesForm.Location = new System.Drawing.Point(11, 241);
+            this.btnCategoriesForm.Location = new System.Drawing.Point(11, 194);
             this.btnCategoriesForm.Margin = new System.Windows.Forms.Padding(2);
             this.btnCategoriesForm.Name = "btnCategoriesForm";
             this.btnCategoriesForm.Size = new System.Drawing.Size(161, 35);
@@ -294,7 +281,6 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.btnCategoriesForm);
-            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.btnBillForm);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.btnBanks);
@@ -310,7 +296,7 @@
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
             this.button8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(11, 336);
+            this.button8.Location = new System.Drawing.Point(11, 289);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(161, 32);
@@ -415,12 +401,25 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel4.Controls.Add(this.lblUserName);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(-1, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(756, 33);
             this.panel4.TabIndex = 9;
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUserName.ForeColor = System.Drawing.Color.White;
+            this.lblUserName.Location = new System.Drawing.Point(534, 5);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(129, 26);
+            this.lblUserName.TabIndex = 6;
+            this.lblUserName.Text = "Kullanıcı Adı: ";
             // 
             // FrmSpending
             // 
@@ -451,7 +450,6 @@
         #endregion
 
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnUpdateSpending;
         private System.Windows.Forms.Button btnRemoveSpending;
         private System.Windows.Forms.Button btnCreateSpending;
@@ -478,5 +476,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox cmbCategory;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblUserName;
     }
 }

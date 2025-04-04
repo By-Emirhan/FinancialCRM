@@ -17,6 +17,7 @@ namespace FinancialCRM
         {
             InitializeComponent();
         }
+        
         FinancialCRMDbEntities DB = new FinancialCRMDbEntities();
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -31,6 +32,7 @@ namespace FinancialCRM
                 if (user != null && user.Password == Sifre)
                 {
                     MessageBox.Show("Hoş geldiniz.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Username.KullaniciAdi = kullaniciAdi;
                     FrmDashboard Dashboard = new FrmDashboard();
                     Dashboard.Show();
                     this.Hide();
@@ -48,5 +50,14 @@ namespace FinancialCRM
                 MessageBox.Show("Bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+    public static class Username
+    {
+        public static string KullaniciAdi { get; set; }
     }
 }

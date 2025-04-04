@@ -21,6 +21,8 @@ namespace FinancialCRM
         FinancialCRMDbEntities DB = new FinancialCRMDbEntities();
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
+            lblUserName.Text += Username.KullaniciAdi;
+
             // Bankalardaki Bakiyelerin Toplamı
             var totalBalance = DB.Banks.Sum(x => x.BankBalance);
             lblTotalbalance.Text = totalBalance.ToString() + " ₺";
@@ -111,6 +113,13 @@ namespace FinancialCRM
         {
             FrmSpending spending = new FrmSpending();
             spending.Show();
+            this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FrmSettings settings = new FrmSettings();
+            settings.Show();
             this.Close();
         }
     }

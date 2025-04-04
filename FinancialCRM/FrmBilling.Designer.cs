@@ -48,13 +48,13 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSettingsForm = new System.Windows.Forms.Button();
             this.btnCategoriesForm = new System.Windows.Forms.Button();
-            this.btnLastProcessForm = new System.Windows.Forms.Button();
             this.btnSpendingForm = new System.Windows.Forms.Button();
             this.btnBillsForm = new System.Windows.Forms.Button();
             this.btnBanks = new System.Windows.Forms.Button();
             this.btnDashboardForm = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -256,7 +256,6 @@
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnSettingsForm);
             this.panel1.Controls.Add(this.btnCategoriesForm);
-            this.panel1.Controls.Add(this.btnLastProcessForm);
             this.panel1.Controls.Add(this.btnSpendingForm);
             this.panel1.Controls.Add(this.btnBillsForm);
             this.panel1.Controls.Add(this.btnBanks);
@@ -272,7 +271,7 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
             this.btnExit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(11, 336);
+            this.btnExit.Location = new System.Drawing.Point(11, 289);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(161, 32);
@@ -286,7 +285,7 @@
             this.btnSettingsForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
             this.btnSettingsForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSettingsForm.ForeColor = System.Drawing.Color.White;
-            this.btnSettingsForm.Location = new System.Drawing.Point(11, 287);
+            this.btnSettingsForm.Location = new System.Drawing.Point(11, 240);
             this.btnSettingsForm.Margin = new System.Windows.Forms.Padding(2);
             this.btnSettingsForm.Name = "btnSettingsForm";
             this.btnSettingsForm.Size = new System.Drawing.Size(161, 35);
@@ -299,26 +298,13 @@
             this.btnCategoriesForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
             this.btnCategoriesForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCategoriesForm.ForeColor = System.Drawing.Color.White;
-            this.btnCategoriesForm.Location = new System.Drawing.Point(11, 241);
+            this.btnCategoriesForm.Location = new System.Drawing.Point(11, 194);
             this.btnCategoriesForm.Margin = new System.Windows.Forms.Padding(2);
             this.btnCategoriesForm.Name = "btnCategoriesForm";
             this.btnCategoriesForm.Size = new System.Drawing.Size(161, 35);
             this.btnCategoriesForm.TabIndex = 5;
             this.btnCategoriesForm.Text = "Kategoriler";
             this.btnCategoriesForm.UseVisualStyleBackColor = false;
-            // 
-            // btnLastProcessForm
-            // 
-            this.btnLastProcessForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
-            this.btnLastProcessForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLastProcessForm.ForeColor = System.Drawing.Color.White;
-            this.btnLastProcessForm.Location = new System.Drawing.Point(11, 195);
-            this.btnLastProcessForm.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLastProcessForm.Name = "btnLastProcessForm";
-            this.btnLastProcessForm.Size = new System.Drawing.Size(161, 35);
-            this.btnLastProcessForm.TabIndex = 4;
-            this.btnLastProcessForm.Text = "Banka Hareketleri";
-            this.btnLastProcessForm.UseVisualStyleBackColor = false;
             // 
             // btnSpendingForm
             // 
@@ -376,6 +362,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(93)))), ((int)(((byte)(77)))));
+            this.panel4.Controls.Add(this.lblUserName);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(-1, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
@@ -394,6 +381,18 @@
             this.label5.Size = new System.Drawing.Size(127, 26);
             this.label5.TabIndex = 2;
             this.label5.Text = "Fatura Formu";
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUserName.ForeColor = System.Drawing.Color.White;
+            this.lblUserName.Location = new System.Drawing.Point(534, 5);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(129, 26);
+            this.lblUserName.TabIndex = 7;
+            this.lblUserName.Text = "Kullanıcı Adı: ";
             // 
             // FrmBilling
             // 
@@ -443,12 +442,12 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSettingsForm;
         private System.Windows.Forms.Button btnCategoriesForm;
-        private System.Windows.Forms.Button btnLastProcessForm;
         private System.Windows.Forms.Button btnSpendingForm;
         private System.Windows.Forms.Button btnBillsForm;
         private System.Windows.Forms.Button btnBanks;
         private System.Windows.Forms.Button btnDashboardForm;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblUserName;
     }
 }

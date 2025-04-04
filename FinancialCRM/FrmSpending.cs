@@ -21,6 +21,8 @@ namespace FinancialCRM
         FinancialCRMDbEntities DB = new FinancialCRMDbEntities();
         private void FrmSpending_Load(object sender, EventArgs e)
         {
+            lblUserName.Text += Username.KullaniciAdi;
+
             var categories = DB.Categories
                    .Select(c => new
                    {
