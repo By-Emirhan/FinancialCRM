@@ -437,6 +437,7 @@
             this.Controls.Add(this.panel4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSpending";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finansal CRM";
             this.Load += new System.EventHandler(this.FrmSpending_Load);
             this.panel1.ResumeLayout(false);
