@@ -53,8 +53,8 @@
             this.btnBanks = new System.Windows.Forms.Button();
             this.btnDashboardForm = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -292,6 +292,7 @@
             this.btnSettingsForm.TabIndex = 6;
             this.btnSettingsForm.Text = "Ayarlar";
             this.btnSettingsForm.UseVisualStyleBackColor = false;
+            this.btnSettingsForm.Click += new System.EventHandler(this.btnSettingsForm_Click);
             // 
             // btnCategoriesForm
             // 
@@ -305,6 +306,7 @@
             this.btnCategoriesForm.TabIndex = 5;
             this.btnCategoriesForm.Text = "Kategoriler";
             this.btnCategoriesForm.UseVisualStyleBackColor = false;
+            this.btnCategoriesForm.Click += new System.EventHandler(this.btnCategoriesForm_Click);
             // 
             // btnSpendingForm
             // 
@@ -318,6 +320,7 @@
             this.btnSpendingForm.TabIndex = 3;
             this.btnSpendingForm.Text = "Harcamalar";
             this.btnSpendingForm.UseVisualStyleBackColor = false;
+            this.btnSpendingForm.Click += new System.EventHandler(this.btnSpendingForm_Click);
             // 
             // btnBillsForm
             // 
@@ -358,6 +361,7 @@
             this.btnDashboardForm.TabIndex = 0;
             this.btnDashboardForm.Text = "Dashboard";
             this.btnDashboardForm.UseVisualStyleBackColor = false;
+            this.btnDashboardForm.Click += new System.EventHandler(this.btnDashboardForm_Click);
             // 
             // panel4
             // 
@@ -370,18 +374,6 @@
             this.panel4.Size = new System.Drawing.Size(756, 33);
             this.panel4.TabIndex = 5;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(2, 5);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 26);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Fatura Formu";
-            // 
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
@@ -393,6 +385,18 @@
             this.lblUserName.Size = new System.Drawing.Size(129, 26);
             this.lblUserName.TabIndex = 7;
             this.lblUserName.Text = "Kullanıcı Adı: ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(2, 5);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(127, 26);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Fatura Formu";
             // 
             // FrmBilling
             // 

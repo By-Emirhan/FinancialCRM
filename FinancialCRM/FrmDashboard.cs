@@ -122,5 +122,11 @@ namespace FinancialCRM
             settings.Show();
             this.Close();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FrmCategories categories = new FrmCategories();
+            categories.Show();
+        }
     }
 }

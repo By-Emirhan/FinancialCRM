@@ -90,5 +90,32 @@ namespace FinancialCRM
         {
             Application.Exit();
         }
+
+        private void btnDashboardForm_Click(object sender, EventArgs e)
+        {
+            FrmDashboard dashboard = new FrmDashboard();
+            dashboard.Show();
+            this.Close();
+        }
+
+        private void btnSpendingForm_Click(object sender, EventArgs e)
+        {
+            FrmSpending spending = new FrmSpending();
+            spending.Show();
+            this.Close();
+        }
+
+        private void btnCategoriesForm_Click(object sender, EventArgs e)
+        {
+            FrmCategories categories = new FrmCategories();
+            categories.Show();
+        }
+
+        private void btnSettingsForm_Click(object sender, EventArgs e)
+        {
+            FrmSettings settings = new FrmSettings();
+            settings.Show();
+            this.Close();
+        }
     }
 }

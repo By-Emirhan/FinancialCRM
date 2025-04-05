@@ -38,6 +38,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblAkbankBalance = new System.Windows.Forms.Label();
@@ -89,7 +90,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.lblUserName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -155,6 +155,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Kategoriler";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnSpendingForm
             // 
@@ -168,6 +169,7 @@
             this.btnSpendingForm.TabIndex = 3;
             this.btnSpendingForm.Text = "Harcamalar";
             this.btnSpendingForm.UseVisualStyleBackColor = false;
+            this.btnSpendingForm.Click += new System.EventHandler(this.btnSpendingForm_Click);
             // 
             // btnBillFrom
             // 
@@ -208,6 +210,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Dashboard";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -219,6 +222,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(806, 33);
             this.panel2.TabIndex = 1;
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUserName.ForeColor = System.Drawing.Color.White;
+            this.lblUserName.Location = new System.Drawing.Point(534, 5);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(129, 26);
+            this.lblUserName.TabIndex = 5;
+            this.lblUserName.Text = "Kullanıcı Adı: ";
             // 
             // label1
             // 
@@ -790,18 +805,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(604, 12);
             this.panel9.TabIndex = 2;
-            // 
-            // lblUserName
-            // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUserName.ForeColor = System.Drawing.Color.White;
-            this.lblUserName.Location = new System.Drawing.Point(534, 5);
-            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(129, 26);
-            this.lblUserName.TabIndex = 5;
-            this.lblUserName.Text = "Kullanıcı Adı: ";
             // 
             // FrmBanks
             // 

@@ -156,5 +156,26 @@ namespace FinancialCRM
             cmbCategory.DataSource = categories;
             cmbCategory.SelectedValue = 0;// Form açıldığında ComboBox alanının boş kalması için...
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmDashboard dashboard = new FrmDashboard();
+            dashboard.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmBilling bills = new FrmBilling();
+            bills.Show();
+            this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FrmSettings settings = new FrmSettings();
+            settings.Show();
+            this.Close();
+        }
     }
 }
