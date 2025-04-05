@@ -1,22 +1,22 @@
 # ✨ FinancialCRM
 
-FinancialCRM, finansal verilerinizi daha kolay ve etkin bir şekilde yönetmenizi sağlayan bir **Windows Forms** uygulamasıdır. C# programlama dili ve Entity Framework kullanılarak geliştirilmiştir. Bu uygulama, kullanıcıların banka hesaplarını takip etmelerine, faturalarını yönetmelerine ve geçmiş bankacılık işlemlerini incelemelerine olanak tanır. Ayrıca, finansal durumunuzu analiz etmenize yardımcı olacak görsel grafikler ve anlık bilgiler sunar.
+Finansal CRM, finansal verilerinizi daha kolay ve etkin bir şekilde yönetmenizi sağlayan bir **Windows From .NET Framework** uygulamasıdır. C# programlama dili ve Entity Framework kullanılarak geliştirilmiştir. Bu uygulama, kullanıcıların banka hesaplarını takip etmelerine, faturalarını yönetmelerine ve geçmiş bankacılık işlemlerini incelemelerine olanak tanır. Ayrıca, finansal durumunuzu analiz etmenize yardımcı olacak görsel grafikler ve anlık bilgiler sunar.
 
 ## 🎯 Uygulamanın Amacı
 
-FinancialCRM, kullanıcıların banka bakiyelerini, banka hareketlerini, giderlerini ve ödemelerini/faturalarını görüntüleyip yönetmelerini sağlar.  
+Finansal CRM ne işe yarar: Banka bilgileri, bankadaki bakiye bilgileri, yapılan harcalamalar ve faturaları görüntüleyip yönetmelerini sağlar.  
 Tüm bu finansal veriler, belirli kategorilere ayrılarak daha düzenli bir şekilde sunulur. Kullanıcılar, finansal durumlarını takip ederken detaylı analizler yapabilir ve geçmiş işlemleri inceleyebilir.
 
 ## 💡 Temel Özellikler
 
 - 💰 **Banka Bakiyeleri ve Hareketleri**  
-  Hesap bakiyelerinizi ve tüm banka işlemlerinizi detaylı şekilde görüntüleyin.
+  Hesap bakiyelerinizi ve yapılan son işlemlerinizi detaylı şekilde görüntüleyin.
 
-- 📑 **Gider ve Fatura Yönetimi**  
-  Aylık giderlerinizi ve faturalarınızı takip edin, ödemelerinizi zamanında yapın.
+- 📑 **Harcama ve Fatura Yönetimi**  
+  Aylık harcamalarınızı ve faturalarınızı takip edin, ödemelerinizi zamanında yapın.
 
-- 📂 **Kategori Bazlı Düzen**  
-  Tüm finansal veriler, belirli kategorilere ayrılarak daha düzenli bir yapıda sunulur.
+- 📂 **Kategori Bazında Düzenleme**  
+  Tüm yaptığınız harcamaları, hangi alanda veya kategoride yaptıysanız kategoriye göre sınıflandırın.
 
 - 📊 **Detaylı Analizler**  
   Geçmiş işlemler üzerinde derinlemesine analizler yaparak finansal sağlığınızı kontrol edin.
@@ -29,12 +29,12 @@ Tüm bu finansal veriler, belirli kategorilere ayrılarak daha düzenli bir şek
   ![](https://github.com/By-Emirhan/FinancialCRM/blob/master/FinancialCRM/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC/login.PNG)
 
 - 📈 **Dashboard Formu**  
-  Görsel grafikler ve anlık bilgilerle finansal durumunuzu analiz etmenize yardımcı olan ekran.
+  Görsel grafikler ve anlık bilgilerle finansal durumunuzu analiz etmenize yardımcı olan ekran. Ayrıca formdaki koyu mavi alanda, Son 4 fatura bilgisi 1,5 saniyede ekranda görünmektedir.(Bu alanda Timer kullanıldı.)
 
   ![](https://github.com/By-Emirhan/FinancialCRM/blob/master/FinancialCRM/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC/dashboard.PNG)
 
-- 💳 **Banka Formu**  
-  Banka hesaplarınızı kolayca yönetebileceğiniz, hesap bakiyelerinizi anlık takip edebileceğiniz ekran.
+- 💳 **Banka Formu ve Son İşlemler**  
+  Banka hesaplarınızı kolayca yönetebileceğiniz, hesap bakiyelerinizi anlık takip edebileceğiniz ekran. Ayrıca yapılan son işlemler tabloda verilmektedir.
 
   ![](https://github.com/By-Emirhan/FinancialCRM/blob/master/FinancialCRM/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC/bankalar.PNG)
 
@@ -43,18 +43,18 @@ Tüm bu finansal veriler, belirli kategorilere ayrılarak daha düzenli bir şek
 
   ![](https://github.com/By-Emirhan/FinancialCRM/blob/master/FinancialCRM/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC/faturalar.PNG)
 
-- 📝 **Giderler Formu**  
-  Aylık giderlerinizi kategorilere ayırarak detaylı bir şekilde yönetebilirsiniz.
+- 📝 **Harcamalar Formu**  
+  Aylık harcamalarınızı kategorilere ayırarak detaylı bir şekilde yönetebilirsiniz.
 
   ![](https://github.com/By-Emirhan/FinancialCRM/blob/master/FinancialCRM/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC/%C3%B6demeler.PNG)
 
 - ⚙️ **Ayarlar Formu**  
-  Uygulama ayarlarınızı özelleştirebileceğiniz ve tercihlerinizi yönetebileceğiniz alan.
+  Uygulamaya girgiğiniz Kullanıcının şifresini bu alanda değiştirebilirsiniz.
 
  ![](https://github.com/By-Emirhan/FinancialCRM/blob/master/FinancialCRM/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC/ayarlar.PNG)
 
 
-- 🗂️ **Kategoriler Formu**  
-  Finansal verilerinizin kategorilere ayrılmasını sağlar. Kullanıcılar, giderlerini ve gelirlerini belirli kategorilere göre gruplandırabilir, böylece daha düzenli bir finansal takip gerçekleştirebilir. Ayrıca, yeni kategoriler ekleyebilir, mevcut kategorileri düzenleyebilir ve kategorilere ait istatistiksel verileri görüntüleyebilirsiniz.
+- 🗂️ **Kategori Kartları**  
+  Finansal verilerinizin kategorilere ayrılmasını sağlar. Kullanıcılar, giderlerini ve gelirlerini belirli kategorilere göre gruplandırabilir, böylece daha düzenli bir finansal takip gerçekleştirebilir. Ayrıca, yeni kategoriler ekleyebilir, mevcut kategorileri düzenleyebilirsiniz.
 
   ![](https://github.com/By-Emirhan/FinancialCRM/blob/master/FinancialCRM/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC/kategori.PNG)
