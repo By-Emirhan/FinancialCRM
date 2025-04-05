@@ -1,4 +1,4 @@
-# ✨ FinancialCRM
+# ✨ Finansal CRM
 
 Finansal CRM, finansal verilerinizi daha kolay ve etkin bir şekilde yönetmenizi sağlayan bir **Windows From .NET Framework** uygulamasıdır. C# programlama dili ve Entity Framework kullanılarak geliştirilmiştir. Bu uygulama, kullanıcıların banka hesaplarını takip etmelerine, faturalarını yönetmelerine ve geçmiş bankacılık işlemlerini incelemelerine olanak tanır. Ayrıca, finansal durumunuzu analiz etmenize yardımcı olacak görsel grafikler ve anlık bilgiler sunar.
 
